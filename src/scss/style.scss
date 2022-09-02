@@ -1,0 +1,42 @@
+// @import '../scss/style.css';
+
+@import './about-company/about-company.scss';
+@import './slider/slider.scss';
+@import './burger-menu/burger-menu.scss';
+@import './feedback-modal/feedback-modal.scss';
+@import './slider-second/slider-second.scss';
+@import './callback-modal/callback-modal.scss';
+@import './slider-third/slider-third.scss';
+
+body {
+  margin: 0;
+  background: #f2f2f2;
+}
+
+@font-face {
+  font-family: 'Regular';
+  src: url('/src/fonts/TTLakes-Regular.eot');
+  src: url('/src/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/src/fonts/TTLakes-Regular.woff') format('woff'),
+    url('/src/fonts/TTLakes-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MediumFont';
+  src: url('/src/fonts/TTLakes-Medium.eot');
+  src: url('/src/fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/src/fonts/TTLakes-Medium.woff') format('woff'),
+    url('/src/fonts/TTLakes-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bold';
+  src: url('/src/fonts/TTLakes-Bold.eot');
+  src: url('/src/fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/src/fonts/TTLakes-Bold.woff') format('woff'),
+    url('/src/fonts/TTLakes-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
