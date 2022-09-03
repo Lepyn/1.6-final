@@ -74,7 +74,7 @@ const myswiperThird = (function () {
       },
 
       spaceBetween: 16,
-      width: 240,
+      width: 260,
       slidesPerView: 1
     })
   }
