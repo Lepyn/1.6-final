@@ -1,6 +1,6 @@
 // #service {
 //   height: 56px;
- 
+
 .swiper-box-repair {
   box-sizing: border-box;
   display: flex;
@@ -72,24 +72,28 @@
   }
 }
 
-// .swiper-slider--repair {
-//   @media (min-width: 768px) {
-//     height: 228px;
-//   }
-// }
+.swiper-slider--repair {
+  @media (min-width: 768px) {
+    padding: 0 24px;
+  }
+}
 
 .swiper-container-repair {
   height: 212px;
   margin-left: 16px;
+  margin-top: 24px;
   // @media (max-width: 768px) {
   //   height: 228px;
   // }
   @media (min-width: 768px) and (max-width: 1119px) {
     height: 160px;
+    margin-left: 0px;
+    
   }
   @media (min-width: 1120px) {
     justify-content: center;
     height: 160px;
+    margin-left: 0px;
   }
   &_active {
     height: auto;
@@ -98,6 +102,13 @@
     }
   }
 }
+
+// .swiper-slider {
+//   background-color: #f8f8f8;
+//   @media (min-width: 768px) {
+//     padding: 0px;
+//   }
+// }
 
 .swiper-pagination {
   margin-bottom: 18px;

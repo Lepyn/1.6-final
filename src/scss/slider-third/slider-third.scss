@@ -1,15 +1,3 @@
-.swiper-container-price {
-  height: 260px;
-  display: flex;
-  margin-left: 8px;
-
-  @media (min-width: 768px) {
-    display: grid;
-    grid-template-columns: auto;
-    height: 324px;
-  }
-}
-
 #price-header {
   height: 56px;
 }
@@ -17,25 +5,38 @@
 .price {
   font-size: 14px;
   box-sizing: border-box;
+
+  .swiper-container-price {
+    height: 260px;
+    display: flex;
+    margin-left: 8px;
+  
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      row-gap: 0;
+      justify-content: center;
+      background: white;
+      padding: 0 16px;
+      margin: 0 24px;
+      width: auto;
+    }
+  }
+
   .swiper-box-price {
     padding: 16px;
     box-sizing: border-box;
-    // display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
     height: 200px;
     width: 260px;
-
-    background-color: white;
-
-    /* margin-top: 16px; */
     border-radius: 6px;
-    //   margin-bottom: 16px;
+    background: white;
 
-    @media (min-width: 768px) and (max-width: 1119px) {
+    @media (min-width: 768px) {
       margin-top: 0px;
-      width: 224px;
       margin-bottom: 0px;
       border: none;
       display: flex;
@@ -43,19 +44,12 @@
       justify-content: space-between;
       align-items: center;
       height: 64px;
-      width: 720px;
+      width: 100%;
       border-radius: 0;
+      border-bottom: 1px solid #eaeaea;
+      padding: 0;
     }
-    @media (min-width: 1120px) {
-      margin-top: 0px;
-      width: 240px;
-      margin-bottom: 0px;
-      border: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
+    
   }
   &__service {
     font-family: 'Regular';
@@ -65,12 +59,12 @@
     margin-bottom: 16px;
     @media (min-width: 768px) {
       margin-bottom: 0;
+      width: 55%;
     }
   }
   &__tag {
     opacity: 0.72;
     color: #7e7e82;
-    // padding: 0px 0px 4px 0px;
     margin: 0;
     @media (min-width: 768px) {
       display: none;
@@ -80,6 +74,7 @@
     margin-bottom: 16px;
     @media (min-width: 768px) {
       margin-bottom: 0;
+      width: 13%;
     }
   }
 
@@ -92,14 +87,16 @@
     font-family: 'Regular';
   }
 
-  &__text_margin {
-    margin-right: 10px;
-  }
-
   &__time {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 30%;
+    }
   }
 
   &__button {
@@ -114,24 +111,54 @@
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bolder;
-
-    // margin-top: 20px;
+    margin-left: 20px;
+    padding-right: 25px;
   }
   &__button-arrow {
     background-position: right 18px top 12px;
     background-repeat: no-repeat;
-
     background-image: url("data:image/svg+xml,%3Csvg width='8' height='10' viewBox='0 0 8 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.05715 4.99994L0.671893 2.27169C0.17799 1.87364 0.174734 1.12223 0.665171 0.719921L0.912566 0.516979C1.27952 0.215962 1.80752 0.214355 2.1763 0.513135L7.62225 4.92536C7.66966 4.96378 7.66966 5.0361 7.62225 5.07451L2.27541 9.40644C1.84893 9.75197 1.23832 9.75011 0.813948 9.402C0.246776 8.93674 0.25054 8.06777 0.821721 7.60744L4.05715 4.99994Z' fill='white'/%3E%3C/svg%3E");
   }
+
+  .swiper-box-title {
+    display: none;
+    @media (min-width: 768px) {
+      box-sizing: border-box;
+      padding: 16px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      border: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 64px;
+      width: 100%;
+      border-radius: 0;
+    }
+
+    &__time {
+      display: none;
+      @media (min-width: 768px) {
+        display: flex;
+        width: 33%;
+        align-items: flex-start;
+      }
+    }
+
+    &__price {
+      display: none;
+      @media (min-width: 768px) {
+        display: flex;
+        width: 19%;
+        align-items: flex-start;
+      }
+    }
+
+    &__service {
+      @media (min-width: 768px) {
+        width: 55%;
+      }
+    }
+  }
 }
-
-// .swiper-wrapper-price {
-//     display: grid;
-
-// }
-
-// .header-table {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-// }
