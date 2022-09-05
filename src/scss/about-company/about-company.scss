@@ -235,7 +235,7 @@
       color: #1b1c21;
       font-size: 14px;
       padding-left: 16px;
-     padding-bottom: 10px;
+      padding-bottom: 10px;
     }
     @media (min-width: 1120px) {
       overflow: hidden;
@@ -246,16 +246,13 @@
       /* max-width: 490px; */
       padding-right: 36px;
     }
-    
   }
 
   &__text_open {
     max-height: 100%;
-
   }
 
   &__readmore {
-     
     position: relative;
     font-family: 'MediumFont';
     font-size: 16px;
@@ -427,19 +424,6 @@
   }
 }
 
-// ::-webkit-scrollbar {
-//   width: 0px;
-//   background: transparent;
-// }
-
-// .text {
-//   margin-top: 0px;
-//   @media (min-width: 768px) and (max-width: 1119px) {
-//     margin-top: 0px;
-//     margin-bottom: 0px;
-//   }
-// }
-
 .text-part--continue {
   font-family: 'Regular';
   color: #1b1c21;
@@ -455,7 +439,6 @@
     margin-bottom: 0px;
   }
   @media (min-width: 1120px) {
- 
     margin-bottom: 0;
   }
 }
@@ -464,9 +447,7 @@
   font-family: 'Regular';
   color: #1b1c21;
   display: inline;
-  @media (max-width: 1119px) {
-    // display: none;
-  }
+
   @media (min-width: 1120px) {
     display: inline;
     margin-top: 0;
@@ -491,6 +472,33 @@
   }
   @media (max-width: 1119px) {
     display: none;
+  }
+}
+
+//======================== НИЖНЯЯ ЧАСТЬ
+
+.note {
+  font-family: 'Regular';
+  padding: 0px 15px 0px 16px;
+  @media (min-width: 768px) {
+    padding: 0px 280px 0px 24px;
+  }
+  &__description {
+    margin: 0px 0px 16px 0px;
+    @media (min-width: 768px) {
+      margin: 24px 0px 16px 0px;
+    }
+  }
+  &__offer {
+    color: #1b1c21;
+    font-family: 'MediumFont';
+    text-decoration: none;
+    position: relative;
+  }
+
+  &__img {
+    padding-left: 25px;
+    background: url('/img/dropdownOffer.svg') no-repeat 50% 55%;
   }
 }
 

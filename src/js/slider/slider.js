@@ -19,6 +19,8 @@ const myswiper = (function () {
         el: '.swiper-pagination',
         clickable: true
       },
+      direction: 'horizontal',
+      loop: true,
 
       spaceBetween: 16,
       width: 240,
@@ -39,6 +41,8 @@ const myswiperSecond = (function () {
         el: '.swiper-pagination',
         clickable: true
       },
+      direction: 'horizontal',
+      loop: true,
 
       spaceBetween: 16,
       width: 240,
@@ -72,6 +76,8 @@ const myswiperThird = (function () {
         el: '.swiper-pagination',
         clickable: true
       },
+      direction: 'horizontal',
+      loop: true,
 
       spaceBetween: 16,
       width: 260,
