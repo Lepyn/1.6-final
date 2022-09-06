@@ -49,7 +49,6 @@
     display: grid;
     column-gap: 24px;
     padding: 0px;
-    // margin-top: 24px;
     row-gap: 16px;
     overflow: hidden;
     grid-template-columns: 1fr 1fr 1fr;
@@ -58,7 +57,6 @@
     display: grid;
     column-gap: 32px;
     padding: 0px;
-    // margin: 24px 32px 0px 0px;
     row-gap: 16px;
     overflow: hidden;
     grid-template-columns: repeat(4, 240px);
@@ -72,7 +70,6 @@
   height: 72px;
   background-color: white;
   border: 1px solid #eaeaea;
-  /* margin-top: 16px; */
   border-radius: 6px;
   margin-bottom: 16px;
   width: 240px;
@@ -91,8 +88,6 @@
   }
 
   &__button {
-    // display: flex;
-    // align-items: flex-end;
     position: relative;
     border: 2px solid #ff3e79;
     border-radius: 50%;
@@ -177,7 +172,6 @@
     font-size: 16px;
     display: block;
     position: relative;
-    /* margin-top: 24px; */
     border: none;
     background-color: transparent;
     margin-left: 30px;

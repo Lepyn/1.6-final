@@ -11,10 +11,14 @@
   transition-duration: 1s;
   opacity: 0;
   @media (min-width: 1440px) {
-    position: relative;
+    position: fixed;
     left: 0;
     top: 0;
     z-index: 0;
+    transform: translateX(0);
+    opacity: inherit;
+    background-color: transparent;
+    transition-duration: 0s;
   }
 
   &_active {
@@ -46,6 +50,7 @@
     left: 0;
     top: 0;
     z-index: 0;
+    box-shadow: none;
   }
 
   &_active {
@@ -82,6 +87,9 @@
 
   &__logo {
     margin-left: 56px;
+    @media (min-width: 1440px) {
+      margin-left: 0px;
+    }
   }
 
   &__search {
@@ -110,6 +118,9 @@
   }
 
   &__burger_active {
+    @media (min-width: 1440px) {
+      display: none;
+    }
     position: absolute;
     left: 24px;
     top: 27px;
@@ -181,16 +192,23 @@ ul {
   margin-top: 241px;
 
   &__mail {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1b1c21;
     font-family: 'Regular';
     margin-top: 16px;
-    font-size: 16px;
+    text-decoration: none;
+    transition: 0.2s all;
+    cursor: pointer;
 
     &:hover {
       font-family: 'Regular';
       margin-top: 16px;
       font-size: 16px;
       cursor: pointer;
-      transform: scale(1.05);
     }
   }
 
@@ -199,13 +217,23 @@ ul {
     margin-top: 12px;
     font-size: 24px;
     font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s all;
+
+    display: block;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1b1c21;
+    text-decoration: none;
+    transition: 0.2s all;
+    cursor: pointer;
 
     &:hover {
       font-family: 'Regular';
-      margin-top: 16px;
-      font-size: 16px;
+      font-weight: 500;
+      font-size: 26px;
       cursor: pointer;
-      transform: scale(1.1);
     }
   }
 }
