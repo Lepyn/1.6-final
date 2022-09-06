@@ -303,7 +303,7 @@
     display: flex;
     justify-content: space-between;
     overflow-y: scroll;
-    padding-left: 0px;
+    padding-left: 16px;
     align-items: center; }
     @media (min-width: 768px) and (max-width: 1119px) {
       .slide-menu__nav {
@@ -315,7 +315,6 @@
         padding-left: 34px;
         gap: 14px 10px;
         flex-wrap: wrap;
-        padding-right: 30px;
         margin-top: 17px;
         margin-bottom: 0px;
         margin-left: 0px;
