@@ -9,6 +9,7 @@
   margin: 0;
   @media (min-width: 1440px) {
     max-width: 1120px;
+    overflow-x: clip;
   }
 }
 
@@ -366,7 +367,7 @@
       padding-left: 34px;
       gap: 14px 10px;
       flex-wrap: wrap;
-    
+
       margin-top: 17px;
       margin-bottom: 0px;
       margin-left: 0px;
