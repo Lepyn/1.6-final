@@ -8,35 +8,61 @@
 @import './callback-modal/callback-modal.scss';
 @import './slider-third/slider-third.scss';
 
-body {
-  margin: 0;
-  background: #f2f2f2;
-}
-
 @font-face {
   font-family: 'Regular';
-  src: url('/src/fonts/TTLakes-Regular.eot');
-  src: url('/src/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/src/fonts/TTLakes-Regular.woff') format('woff'),
-    url('/src/fonts/TTLakes-Regular.ttf') format('truetype');
+  src: url('../fonts/TTLakes-Regular.eot');
+  src: url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Regular.woff') format('woff'),
+    url('../fonts/TTLakes-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'MediumFont';
-  src: url('/src/fonts/TTLakes-Medium.eot');
-  src: url('/src/fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-    url('/src/fonts/TTLakes-Medium.woff') format('woff'),
-    url('/src/fonts/TTLakes-Medium.ttf') format('truetype');
+  src: url('../fonts/TTLakes-Medium.eot');
+  src: url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Medium.woff') format('woff'),
+    url('../fonts/TTLakes-Medium.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Bold';
-  src: url('/src/fonts/TTLakes-Bold.eot');
-  src: url('/src/fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-    url('/src/fonts/TTLakes-Bold.woff') format('woff'),
-    url('/src/fonts/TTLakes-Bold.ttf') format('truetype');
+  src: url('../fonts/TTLakes-Bold.eot');
+  src: url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Bold.woff') format('woff'),
+    url('../fonts/TTLakes-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+body {
+  margin: 0;
+  background: #f2f2f2;
+}
+// @font-face {
+//   font-family: 'Regular';
+//   src: url('../fonts/TTLakes-Regular.eot');
+//   src: url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+//     url('../fonts/TTLakes-Regular.woff') format('woff'),
+//     url('../fonts/TTLakes-Regular.ttf') format('truetype');
+// }
+
+// @font-face {
+//   font-family: 'MediumFont';
+//   src: url('../fonts/TTLakes-Medium.eot');
+//   src: url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+//     url('../fonts/TTLakes-Medium.woff') format('woff'),
+//     url('../fonts/TTLakes-Medium.ttf') format('truetype');
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Bold';
+//   src: url('../fonts/TTLakes-Bold.eot');
+//   src: url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+//     url('../fonts/TTLakes-Bold.woff') format('woff'),
+//     url('../fonts/TTLakes-Bold.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
